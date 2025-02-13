@@ -3,38 +3,6 @@
 #-> (400, 2)
 #-> class들의 centroid 는 랜덤하게
 
-#엉망진창 내코드
-
-# import matplotlib.pyplot as plt
-# import numpy as np
-#
-# n_class = 4
-# n_data_per_class = 100
-#
-# n_data = n_class * n_data_per_class
-#
-# centroids = np.random.uniform(-10, 10, size=(n_class, 2))
-#
-# data_ = np.zeros((n_data, 2))
-# labels = np.zeros(n_data)
-#
-# for i in range(n_class):
-#     start_idx = i * n_data_per_class
-#     end_idx = start_idx + n_data_per_class
-#     data_[start_idx:end_idx] = np.random.normal(centroids[i], 1, size=(n_data_per_class, 2))
-#     labels[start_idx:end_idx] = i
-#
-# fig, ax = plt.subplot(figsize=(10, 10))
-# colors = ['blue', 'red', 'green', 'orange']
-#
-# for i in range(n_class):
-#     ax.scatter(data_[labels == i][:, 0], data_[labels == i][:, 1], color=colors[i], label=f'Class {i + 1}', alpha=0.6)
-#     ax.scatter(centroids[i, 0], centroids[i, 1], color='purple', marker='x', s=100)  # 중심점 표시
-#
-#
-# plt.show()
-
-
 import matplotlib.pyplot as plt
 import numpy as np
 
